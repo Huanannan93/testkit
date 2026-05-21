@@ -6,7 +6,8 @@ import json
 from testkit.workspace import ensure_config
 from testkit.core.repo_manager import RepoManager
 from testkit.core.skill_loader import load_skill, format_context
-from testkit.main import console
+from rich.console import Console
+console = Console()
 from rich.table import Table
 
 skill = typer.Typer(help="技能管理", no_args_is_help=True)

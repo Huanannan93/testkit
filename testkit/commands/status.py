@@ -3,7 +3,8 @@ import json
 import typer
 from testkit.workspace import ensure_config, repo_status
 from testkit.core.repo_manager import RepoManager
-from testkit.main import console
+from rich.console import Console
+console = Console()
 from rich.table import Table
 
 

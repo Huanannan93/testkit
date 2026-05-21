@@ -2,7 +2,8 @@
 import typer
 from testkit.workspace import ensure_config
 from testkit.core.repo_manager import RepoManager
-from testkit.main import console
+from rich.console import Console
+console = Console()
 
 
 def update(

@@ -4,7 +4,8 @@ import json
 
 from testkit.workspace import ensure_config
 from testkit.core.repo_manager import RepoManager
-from testkit.main import console
+from rich.console import Console
+console = Console()
 from rich.table import Table
 
 agent = typer.Typer(help="Agent 管理", no_args_is_help=True)

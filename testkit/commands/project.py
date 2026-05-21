@@ -9,7 +9,8 @@ from testkit.workspace import ensure_config
 from testkit.core.repo_manager import RepoManager
 from testkit.core.scaffold import create_project, DOMAIN_FRAMEWORKS
 from testkit.models.project import ProjectMeta
-from testkit.main import console
+from rich.console import Console
+console = Console()
 
 project = typer.Typer(help="项目管理", no_args_is_help=True)
 

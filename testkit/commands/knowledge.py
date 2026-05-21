@@ -3,7 +3,8 @@ import typer
 from testkit.workspace import ensure_config
 from testkit.core.repo_manager import RepoManager
 from testkit.core.scanner import Scanner
-from testkit.main import console
+from rich.console import Console
+console = Console()
 
 knowledge = typer.Typer(help="知识库管理", no_args_is_help=True)
 

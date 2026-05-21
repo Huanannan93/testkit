@@ -4,7 +4,8 @@ import typer
 from testkit.config import Config, CONFIG_PATH
 from testkit.workspace import ensure_config, clone_repo, pull_repo
 from testkit.core.repo_manager import RepoManager
-from testkit.main import console
+from rich.console import Console
+console = Console()
 from rich.table import Table
 
 
